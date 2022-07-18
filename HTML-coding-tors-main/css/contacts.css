@@ -1,0 +1,59 @@
+#content {
+    padding: 1rem 0;
+    max-width: 80rem;
+    width: 95%;
+    margin: 0 auto 3rem auto;
+}
+
+#content > .title {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#contacts > #contact-info {
+    padding: 2.5rem;
+    background-color: #6495ed;
+    width: 80%;
+    max-width: 25rem;
+    margin: 0 1rem 1rem 0;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.725em;
+}
+
+#contact-info > h4 {
+    font-weight: 700;
+}
+
+#contact-info > p, address {
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    margin: 1rem 0 0 0 ;
+}
+
+.map > iframe {
+    max-width: 37.5rem;
+    width: 80vw;
+    min-width: 20rem;
+    height: 30rem;
+}
+
+@media screen and (max-width: 1000px){
+    #contacts {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #contacts > #contact-info {
+        margin: 0 0 1rem 0;
+    }
+}

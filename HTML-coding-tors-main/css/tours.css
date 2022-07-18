@@ -1,0 +1,26 @@
+article {
+    margin-bottom: 2rem;
+}
+article > a > img {
+    width: 100%;
+    height: auto;
+    border-radius: .5rem;
+}
+
+.btn-more {
+    align-self: center;
+    background-color: #32b67a;
+    border-radius: 3rem;
+    border: none;
+    color: white;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+h2 {
+    line-height: 1.25em;
+    font-weight: 500;
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}

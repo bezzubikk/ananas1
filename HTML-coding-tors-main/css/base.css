@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+html {
+    font-size: 16px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto 2rem auto;
+
+}
+
+section, article, form {
+    max-width: 80rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.25em;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.25rem;
+    line-height: 1.444em;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    margin: 0 0 .75rem;
+}
+
+h5 {
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+p {
+    font-size: .75rem;
+    margin: 0 0 3rem 0;
+    position: relative;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: .4s all ease-in;
+}
+
+
+
+a:hover {
+    color: #32b67a;
+}
+
+#bread-crunches {
+    padding: 1rem 0;
+}
+
+ul > li {
+    list-style: none;
+}
+
+.btn-more {
+    font-size: .875rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: .15rem solid #32b67a;
+    color: #32b67a;
+    border-radius: .25rem;
+    text-transform: uppercase;
+    padding: .75rem 2rem;
+    font-family: Montserrat,sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all .4s;
+}
+
+
+
+.title {
+    font-size: 2.5rem;
+    line-height: 1.25em;
+    font-weight: 500;
+    color: #111;
+    margin: 0 0 3rem;
+    font-family: Montserrat,sans-serif;
+    position: relative;
+    padding: 0 0 1rem;
+}
+
+.left::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 5rem;
+    height: .25rem;
+    background: #32b67a;
+}
+
+.center {
+    text-align: center;
+}
+
+.center::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    height: .25rem;
+    background: #32b67a;
+}
+
+
+.btn-more:hover {
+    border: .125rem solid #32b67a;
+    color: #fff;
+    background-color: #32b67a;
+}
+
+
+
+
+#intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2.5rem 0;
+    border-bottom: .0625rem #ccc solid;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#phone {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+#phone > a {
+    font-size: 2rem;
+    color: #32b67a;
+}
+
+
+nav {
+    width: 100%;
+    height: 4rem;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-around;
+    border-bottom: #cccccc .0625rem solid;
+}
+
+nav > button {
+    display: none;
+}
+
+nav > #burger {
+    display: none;
+}
+
+.wrapper {
+    height: 100%;
+    position: relative;
+}
+nav > .wrapper > #burger {
+    display: none;
+}
+
+nav > .wrapper > ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    height: 100%;
+    transition: all .4s ease-in;
+    flex-direction: row;
+}
+
+nav > .wrapper > ul > li {
+    z-index: 15;
+    flex-grow: .1;
+    text-transform: uppercase;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.act-page {
+    color: #32b67a;
+}
+
+.double-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+aside {
+    margin-left: 2rem;
+    width: 20rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+li > a > img {
+    width: 100%;
+    height: auto;
+    border-radius: .25rem;
+    padding-bottom: .25rem;
+}
+
+p {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+
+
+.text-holder > footer {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.text-holder > footer > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-holder > footer > div > a:first-child{
+    margin-right: 2rem;
+}
+
+
+footer {
+    background: #111111;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer > .content {
+    width: 90vw;
+    max-width: 64rem;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.714em;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 2rem 0;
+}
+
+@media screen  and (max-width: 800px){
+    nav > .wrapper > ul {
+        justify-content: center;
+    }
+
+    .double-page {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .double-page > aside {
+        width: 90%;
+        margin-left: 0;
+    }
+
+
+    .double-page > aside > ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .double-page > aside > ul > li {
+        max-width: 80vw;
+        margin: .5rem;
+        width: 40vw;
+    }
+
+}
+
+img {
+    border-radius: .25rem;
+    margin: 1rem;
+}
+
+@media screen  and (max-width: 600px){
+    img {
+        margin: 0;
+    }
+
+    nav > .wrapper > ul {
+        display: none;
+    }
+
+    nav > .wrapper > ul > li {
+        border: #cccccc .0625rem solid;
+        border-top: none;
+        width: 80%;
+    }
+
+    nav > .wrapper > #burger,
+    nav > .wrapper > #burger::before,
+    nav > .wrapper > #burger::after {
+        content: '';
+        background-color: #32b67a;
+        height: .25rem;
+        width: 3rem;
+        border-radius: .25rem;
+        position: absolute;
+        top: calc(50% - 0.125rem);
+        cursor: pointer;
+    }
+
+    nav > .wrapper > #burger {
+        right: 3rem;
+        display: flex;
+    }
+
+    nav > .wrapper > #burger::before {
+        margin-top: .75rem;
+    }
+
+    nav > .wrapper > #burger::after {
+        margin-top: -.75rem;
+    }
+
+    html {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .double-page > aside > ul > li {
+        width: auto;
+    }
+}
